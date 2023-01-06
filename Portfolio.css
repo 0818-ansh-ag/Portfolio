@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap');
+:root {
+
+    --white: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+     text-decoration: none;
+     line-height: 30px;
+     box-sizing: border-box;
+ 
+    /* color: white; */
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.portfolio{
+    display: flex;
+    position: absolute;
+}
+
+/* aside  */
+
+.aside{
+    display: flex;
+    position: fixed;
+   left: 0;
+   top: 0;
+    width: 18rem;
+    height: 100vh;
+    background-color:rgb(38, 38, 38);
+    align-items: center;
+   flex-direction: column;
+   color: var(--white);
+   font-family: 'Baloo Paaji 2', cursive;
+   border-right: 1px solid grey;
+   
+
+}
+
+.aside .logo{
+    position:absolute;
+    /* background-color: green; */
+    top: 30px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px 30px;
+    
+    
+}
+.aside .logo a ::before{
+    content: "";
+    bottom: 0rem;
+    left: 0rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    border-left:solid 7px red;
+    border-bottom:solid 7px red;
+    z-index: 1;
+}
+.aside .logo a ::after{
+    content: "";
+    top: 0;
+    right: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    border-right:solid 7px red;
+    border-top:solid 7px red;
+    z-index: 1;
+}
+.aside .logo a span{
+    font-size: 45px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+.aside .navbar{
+    position: absolute;
+    top: 250px;
+  
+}
+.aside .navbar ul li{
+    display: block;
+    margin-bottom:2.7rem ;
+    list-style:none ;
+    
+}
+.aside .navbar ul li a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid grey;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.aside .navbar ul li a i{
+    margin-right: 15px;
+}
+.aside .navbar ul li a:hover{
+    color: red;
+}
+.aside .navbar ul li a.active{
+    color: red;
+}
+
+/* *************** */
+/* main  */
+/* ******************/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    transform: translateX(18rem);
+    /* background: #000; */
+
+}
+.main-content{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: #000;
+
+}
+.main-content .information{
+    position: absolute;
+    width: 48rem;
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+.main-content .information h2{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Baloo Paaji 2', cursive;
+    
+}
+.main-content .information h2 span{
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+.main-content .information h3{
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+.main-content .information h3 span{
+    color: red;
+}
+.main-content .information p{
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main-content .information .aboutBtn{
+    background-color: red;
+    color: #ffffff;
+    width: 150px;
+    margin-top: 3.5rem;
+    padding: 10px 3px;
+    font-size: 1rem;
+    border-radius: 12px;
+
+    
+}
+.main-content .information .aboutBtn:hover{
+    transform: scale(1.1);
+}
+.main-content .profilePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width:32.9rem;
+    height: 100vh;
+   
+}
+.main-content .profilePic .pic{
+    width: 320px;
+    height: 380px;
+    padding: 5px 5px;
+    position: relative;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-content .profilePic img{
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    
+
+}
+.main-content .profilePic img:hover{
+    transform: scale(1.1);
+}
+.main-content .profilePic .pic::after{
+    position: absolute;
+    content: "";
+    right: -35px;
+    bottom: -35px;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid red;
+    border-right: 10px solid red;
+}
+.main-content .profilePic .pic::before{
+    position: absolute;
+    content: "";
+    left: -35px;
+    top: -35px;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid red;
+    border-left: 10px solid red;
+}
+ 
+.hidden{
+    display: none;
+} 
+
+/* ********** */
+/* about */
+/* ********** */
+
+.About{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    /* background: #000; */
+
+}
+.About-content{ 
+    padding: 10px 20px;
+    padding-top: 40px;
+    background-color: #000;
+
+}
+.About-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.About-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.About-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.About-content h2{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.About-content  h2 span{
+    color: red;
+    font-weight: 600;
+}
+.About-content p{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.About-content .info{
+    display: flex;
+    letter-spacing: 2px;
+}
+.About-content .info .personalInfo{
+    width: 45rem;
+    /* background-color: violet; */
+    font-size: 1.1rem;
+    color: #ffffff;
+    overflow: hidden;
+}
+.About-content .info .personalInfo .table{
+    border-spacing: 2rem;
+    
+
+}
+.About-content .info .personalInfo .table td{
+   padding-right: 5rem;
+   border-bottom: 1px solid grey;
+   font-family: 'Roboto Condensed', sans-serif;
+   
+  
+}
+.About-content .info .personalInfo .table td span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-right: 4px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+.About-content .info .personalInfo .download,
+.About-content .info .personalInfo .hire{
+    position: relative;
+    background-color: red;
+    color: #ffffff;
+    width: 150px;
+    margin-top: 3.5rem;
+    padding: 10px 10px;
+    font-size: 1rem;
+    left: 30px;
+    border-radius: 22px;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    
+}
+.About-content .info .personalInfo .download:hover,
+.About-content .info .personalInfo .hire:hover{
+    transform: scale(1.1);
+}
+
+.About-content .info .skills{
+    width: 34rem;
+    /* background-color: greenyellow; */
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+.About-content .info .skills .skill-item{
+    margin-bottom: 1.5rem;
+}
+.About-content .info .skills .progress{
+    background-color: grey;
+    height: 10px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+
+}
+.About-content .info .skills .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: red;
+}
+.About-content .info .skills .progress .skill-percent{
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #ffffff;
+
+}
+.About-content .info .skills h3{
+    font-size: 1.3rem;
+    /* margin-bottom: 3rem; */
+    position: relative;
+    color: #ffffff;
+}
+
+/* .About-content .info .skills h3::before{
+    content: "";
+    position: absolute;
+    top:10px;
+    left: 0px;
+    width: 300px;
+    height: 20px;
+    border-bottom: 10px solid red;
+} */
+
+.eduExp{
+    display: flex;
+    width: 65rem;
+    justify-content: space-between;
+    color: #ffffff;
+    position: relative;
+    font-family: 'Baloo Paaji 2', cursive;
+    
+}
+.eduExp i{
+    padding-right: 4px;
+}
+.matriculation,
+.intermediate,
+.bachelor{
+    margin-bottom: 3rem;
+}
+.eduExp .educationContainer{
+    width: 30rem;
+    padding: 10px 20px;
+    /* background-color: green; */
+    position: relative;
+}
+.eduExp .educationContainer h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.eduExp .educationContainer .education-content{
+    margin-top: 2.5rem;
+    background-color:rgb(38, 38, 38);
+    padding: 10px 40px;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(220, 220, 222, 0.15);
+    padding-top: 25px;
+
+}
+.eduExp .educationContainer .education-content .education-content-item .circle{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    top: 1.3rem;
+    left: -1.9rem;
+    border-radius: 50%;
+    background-color: red;
+}
+.eduExp .educationContainer .education-content:before{
+    position: absolute;
+    top: 8rem;
+    left: 2.3rem;
+    content: "";
+    width: 1px;
+    height: 68%;
+    background-color: red;
+}
+/* .eduExp .educationContainer .education-content:last-child{
+   padding-bottom: 0rem;
+} */
+
+
+.eduExp .educationContainer .education-content h3{
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    
+}
+.eduExp .educationContainer .education-content p{
+    position: relative;
+    left: 30px;
+ }
+.eduExp .experinceContainer{
+    width: 30rem;
+    position: relative;
+    padding: 10px 20px;
+    /* background-color: aqua; */
+    
+}
+.eduExp .experinceContainer h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.eduExp .experinceContainer .experince-content{
+    background-color:rgb(38, 38, 38);
+    padding: 10px 40px;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(174, 174, 176, 0.15);
+    padding-top: 25px;
+
+}
+.eduExp .experinceContainer .experince-content .experince-content-item .circle{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    top: 1.3rem;
+    left: -1.9rem;
+    border-radius: 50%;
+    background-color: red;
+}
+.eduExp .experinceContainer .experince-content h3{
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    /* font-family: 'Baloo Paaji 2', cursive; */
+}
+.eduExp .experinceContainer .experince-content p{
+   position: relative;
+   left: 30px;
+}
+
+.eduExp .experinceContainer .experince-content:before{
+    position: absolute;
+    top: 8rem;
+    left: 2.3rem;
+    content: "";
+    width: 1px;
+    height: 68%;
+    background-color: red;
+}
+
+
+/* ************** */
+/*services*/
+/* **************** */
+
+.services{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    /* background: #000; */
+
+}
+.Services-content{ 
+    
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.Services-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.Services-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Services-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Services-content .serviceContainer{
+    position: relative;
+    display: block;
+    width: 78rem;
+    /* background-color: green; */
+    padding: 10px 20px;
+    
+}
+
+.Services-content .serviceContainer .serviceContainerContent{
+    display: flex;
+    width: 75rem;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    padding:10px 20px;
+    color: #ffffff;
+    justify-content: space-around;
+   
+}
+
+.Services-content .serviceContainer .serviceContainerContent .sContent{
+    width: 20rem;
+    margin-left:1rem;
+    margin-top: 1rem;
+    margin-bottom:1.5rem;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.Services-content .serviceContainer .serviceContainerContent .sContent:hover{
+    box-shadow: 0 0 23px rgba(174, 174, 176, 0.15); 
+    transform: scale(1.1);
+ } 
+
+.Services-content .serviceContainer .serviceContainerContent .sContent h3{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.Services-content .serviceContainer .serviceContainerContent .sContent p{
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.Services-content .serviceContainer .serviceContainerContent .sContent i{
+    color: red;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ************** */
+/*services*/
+/* **************** */
+
+.contact{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    /* background: #000; */
+
+}
+.Contact-content{ 
+    
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.Contact-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.Contact-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Contact-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Contact-content .contactContainer{
+    position: relative;
+    width: 78rem;
+    margin: auto;
+    /* background-color:bisque ; */
+}
+.Contact-content .contactContainer .greeting{
+    position: relative;
+    margin: auto;
+    width: 70rem;
+    text-align: center;
+    /* background-color: aqua; */
+    margin-bottom: 1.8rem;
+}
+.Contact-content .contactContainer .greeting .greetingContent h2{
+    color: red;
+    margin-bottom: 0.6rem;
+}
+.Contact-content .contactContainer .greeting .greetingContent p{
+    color: white;
+}
+.Contact-content .contactContainer .typesToInform{
+    position: relative;
+    width: 70rem;
+    margin: auto;
+    padding: 8px 8px;
+    /* background-color: chartreuse; */
+    margin-bottom: 2.5rem;
+}
+.Contact-content .contactContainer .typesToInform .typesToInformContent{
+    display: flex;
+    justify-content: space-around;
+}
+.typesToInform .typesToInformContent .call,
+.typesToInform .typesToInformContent .location,
+.typesToInform .typesToInformContent .email,
+.typesToInform .typesToInformContent .website{
+    width: 15rem;
+    text-align: center;
+    color: #ffffff;
+}
+.icon{
+    font-size: 1.7rem;
+    color: red;
+}
+.typesToInform .typesToInformContent .call h3,
+.typesToInform .typesToInformContent .location h3,
+.typesToInform .typesToInformContent .email h3,
+.typesToInform .typesToInformContent .website h3{
+    font-size: 1.2rem;
+    FONT-WEIGHT: 900;
+}
+.typesToInform .typesToInformContent .call p,
+.typesToInform .typesToInformContent .location p,
+.typesToInform .typesToInformContent .email p,
+.typesToInform .typesToInformContent .website p{
+    color: rgb(248, 233, 233);
+}
+
+.Contact-content .contactContainer .form{
+    width: 70rem;
+    /* background-color: pink; */
+    margin: auto;
+}
+.Contact-content .contactContainer .form .formInnerBox{
+    display: block;
+    /* background-color: darkgoldenrod; */
+}
+.Contact-content .contactContainer .form .formInnerBox .message{
+    text-align: center;
+}
+.Contact-content .contactContainer .form .formInnerBox .message h3{
+    color: red;
+    font-size: 1.6rem;
+    margin-bottom: 1.1rem;
+}
+.Contact-content .contactContainer .form .formInnerBox .message p{
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    color: #ffffff;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent{
+    width: 70rem;
+    padding: 10px 20px;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Name{
+    margin-right: 2rem;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Name,
+.Contact-content .contactContainer .form .formInnerBox .formContent #Email{
+    width: 32rem;
+    padding: 4px 17px;
+    height: 3rem;
+    font: bolder;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 18px;
+    margin-bottom: 1.6rem;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Subject{
+    width: 66.5rem;
+    height: 3rem;
+    font: bolder;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 4px 20px;
+    margin-bottom: 1.6rem;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+    
+
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent textarea{
+    width: 66.5rem;
+    max-width: 66.5rem;
+    border-radius: 18px;
+    padding: 4px 17px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font: bolder;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+    margin-bottom: 2.5rem;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Send{
+    background-color: red;
+    color: white;
+    width: 10rem;
+    font-size: 1rem;
+    padding: 6px 18px;
+    border-radius: 12px;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Send:hover{
+    transform: scale(1.1);
+}
+
