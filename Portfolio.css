@@ -104,7 +104,7 @@ a:-webkit-any-link {
 .aside .navbar ul li a:hover{
     color: red;
 }
-.aside .navbar ul li a.active{
+.aside .navbar ul li .active{
     color: red;
 }
 
@@ -128,7 +128,7 @@ a:-webkit-any-link {
     width: 80.9rem;
     height: 100vh;
     display: flex;
-    position: relative;
+    position: absolute;
     background: #000;
 
 }
@@ -238,7 +238,7 @@ a:-webkit-any-link {
 }
  
 .hidden{
-    display: none;
+    display: none ;
 } 
 
 /* ********** */
@@ -249,14 +249,13 @@ a:-webkit-any-link {
     display: flex;
     flex-wrap: wrap;
     width: 80.9rem;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     position: absolute;
-    /* background: #000; */
 
 }
 .About-content{ 
-    padding: 10px 20px;
+    padding: 10px 15px;
     padding-top: 40px;
     background-color: #000;
 
@@ -304,6 +303,8 @@ a:-webkit-any-link {
 .About-content .info{
     display: flex;
     letter-spacing: 2px;
+    flex-direction: row;
+    margin-bottom: 3rem;
 }
 .About-content .info .personalInfo{
     width: 45rem;
@@ -330,8 +331,14 @@ a:-webkit-any-link {
     padding-right: 4px;
     font-family: 'Baloo Paaji 2', cursive;
 }
+.About-content .info .personalInfo .bttn{
+    display: flex;
+    margin-bottom: 1rem;
+}
 .About-content .info .personalInfo .download,
 .About-content .info .personalInfo .hire{
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: red;
     color: #ffffff;
@@ -340,9 +347,11 @@ a:-webkit-any-link {
     padding: 10px 10px;
     font-size: 1rem;
     left: 30px;
+    text-align: center;
     border-radius: 22px;
     margin-right: 1rem;
     cursor: pointer;
+    overflow: hidden;
 
     
 }
@@ -455,7 +464,7 @@ a:-webkit-any-link {
     left: 2.3rem;
     content: "";
     width: 1px;
-    height: 68%;
+    height: 43%;
     background-color: red;
 }
 /* .eduExp .educationContainer .education-content:last-child{
@@ -518,7 +527,7 @@ a:-webkit-any-link {
     left: 2.3rem;
     content: "";
     width: 1px;
-    height: 68%;
+    height: 55%;
     background-color: red;
 }
 
@@ -533,7 +542,7 @@ a:-webkit-any-link {
     width: 80.9rem;
     height: 100vh;
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     /* background: #000; */
 
 }
@@ -623,6 +632,145 @@ a:-webkit-any-link {
     margin-bottom: 1rem;
 }
 
+/* ********************* */
+/* PortFolio  */
+/* ********************* */
+
+.portfolio{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    /* height: 100vh; */
+    display: flex;
+    /* position: absolute; */
+    /* background: #000; */
+
+}
+.Portfolio-content{ 
+    
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #000;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.Portfolio-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.Portfolio-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Portfolio-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Portfolio-content .portfolioContainer{
+    position: relative;
+    display: block;
+    width: 78rem;
+    /* background-color: green; */
+    padding: 10px 20px;
+    
+}
+
+.Portfolio-content .portfolioContainer .portfolioContainerContent{
+    display: flex;
+    width: 75rem;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    padding:10px 20px;
+    color: #ffffff;
+    justify-content: space-around;
+   
+}
+
+.Portfolio-content .portfolioContainer .portfolioContainerContent .sContent{
+    width: 20rem;
+    height: 25rem;
+    margin-left:1rem;
+    margin-top: 1rem;
+    margin-bottom:1.5rem;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+.Portfolio-content .portfolioContainer .portfolioContainerContent .sContent img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.Portfolio-content .portfolioContainer .portfolioContainerContent .sContent .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+.Portfolio-content .portfolioContainer .portfolioContainerContent .sContent:hover {
+    box-shadow: 0 0 23px rgba(174, 174, 176, 0.15); 
+    transform: scale(1.1);
+ } 
+.Portfolio-content .portfolioContainer .portfolioContainerContent .sContent:hover img{
+    transform: scale(1.1);
+ } 
+ .Portfolio-content .portfolioContainer .portfolioContainerContent .sContent:hover .layer{
+    /* box-shadow: 0 0 23px rgba(174, 174, 176, 0.15);  */
+    /* transform: scale(1.1); */
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: height 0.5s;
+ } 
+
+.Portfolio-content .portfolioContainer .portfolioContainerContent .sContent h3{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.Portfolio-content .portfolioContainer .portfolioContainerContent .sContent p{
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.Services-content .portfolioContainer .portfolioContainerContent .sContent .layer a:-webkit-any-link{
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
 
 /* ************** */
 /*services*/
@@ -632,9 +780,8 @@ a:-webkit-any-link {
     display: flex;
     flex-wrap: wrap;
     width: 80.9rem;
-    height: 100vh;
     display: flex;
-    position: absolute;
+    position: fixed;
     /* background: #000; */
 
 }
@@ -797,7 +944,7 @@ a:-webkit-any-link {
     border: 1px solid black;
     margin-bottom: 2.5rem;
 }
-.Contact-content .contactContainer .form .formInnerBox .formContent #Send{
+.Contact-content .contactContainer .form .formInnerBox .formContent #send{
     background-color: red;
     color: white;
     width: 10rem;
@@ -805,7 +952,7 @@ a:-webkit-any-link {
     padding: 6px 18px;
     border-radius: 12px;
 }
-.Contact-content .contactContainer .form .formInnerBox .formContent #Send:hover{
+.Contact-content .contactContainer .form .formInnerBox .formContent #send:hover{
     transform: scale(1.1);
 }
 

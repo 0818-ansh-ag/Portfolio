@@ -1,367 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-</head>
-<link rel="stylesheet" href="Portfolio.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  </head>
+  <link rel="stylesheet" href="Portfolio.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  />
 
-<body>
-
+  <body>
     <!-- portfolio container -->
 
     <div class="portfolio">
+      <!-- Aside  -->
 
-        <!-- Aside  -->
+      <div class="aside">
+        <div class="logo">
+          <a href="#"><span>Port</span>folio</a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li id="Home">
+              <a href="#" class="homeBtn active">
+                <i class="fa fa-home"></i> Home</a
+              >
+            </li>
+            <li id="About">
+              <a href="#" class="aboutBtn"><i class="fa fa-user"></i> About</a>
+            </li>
+            <li id="Service">
+              <a href="#" class="serviceBtn">
+                <i class="fa fa-list"></i> Services</a
+              >
+            </li>
+            <li id="Portfolio">
+              <a href="#" class="portfolioBtn">
+                <i class="fa fa-briefcase"></i> Portfolio</a
+              >
+            </li>
+            <li id="Contact">
+              <a href="#" class="contactBtn">
+                <i class="fa fa-comment"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-        <div class="aside">
-            <div class="logo">
-                <a href="#"><span>Port</span>folio</a>
+      <!-- main -->
+
+      <div class="main">
+        <div class="home">
+          <div class="main-content">
+            <div class="information">
+              <h2>Hello, my name is <span>Ansh Goyal</span></h2>
+              <h3>I'm a <span>Web Developer</span></h3>
+              <p>
+                I'm passionate about web designing and developing. I work hard
+                and care about writing neat, semantic, concise, indented and
+                thoroughly commented code for HTML, CSS and JavaScript. I'm
+                currently looking for the right opportunity to work in an
+                environment that will help me progress into a full-stack role.
+              </p>
+              <button id="aboutus" class="aboutBtn">More About Me</button>
+              <!-- <a href="#about" id="About" class="aboutBtn">More About Me</a> -->
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li id="Home"><a href="#" class="active"> <i class="fa fa-home"></i> Home</a></li>
-                    <li id="About"><a href="#"> <i class="fa fa-user"></i> About</a></li>
-                    <li id="Service"><a href="#"> <i class="fa fa-list"></i> Services</a></li>
-                    <li id="Portfolio"><a href="#"> <i class="fa fa-briefcase"></i> Portfolio</a></li>
-                    <li id="Contact"><a href="#"> <i class="fa fa-comment"></i> Contact</a></li>
-                </ul>
-
-            </nav>
-
+            <div class="profilePic">
+              <div class="pic">
+                <img
+                  src="./image/WhatsApp Image 2020-11-12 at 11.57.52 PM.jpeg"
+                  alt="Ansh Goyal"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- main -->
+        <!-- about  -->
+        <div class="About">
+          <div class="About-content hidden" id="about">
+            <h1>About Me</h1>
+            <h2>I'm Ansh Goyal and <span> Web Developer</span></h2>
+            <p>
+              I am from Sirsa, Haryana. Currently I pursuing my bachelor degree
+              in computer engineering from Chandigarh University, Gharuan,
+              Mohali and my CGPA is 8.41. Along with my degree, I have completed
+              HTML, CSS, JavaScript course on Coursera and currently working on
+              Node.js and Express.js. My strength are I am a hardworking and
+              self motivating person also my short term goal is to get a job in
+              a reputed company while, my long term goal is to achieve a good
+              position in a company where I can build my career, help the
+              organization to solve the real-life problem. My hobbies are
+              Hiking, Gymming, Bike Riding, Cooking and I love to design
+              Websites. Lastly, I am a quick learner and believe in learning
+              from my past mistakes and experiences.
+            </p>
+            <div class="info">
+              <div class="personalInfo">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td><span>Birthday:</span>11 Nov 2002</td>
+                      <td><span>Age:</span>20</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span>Website:</span
+                        ><a
+                          href="https://0818-ansh-ag.github.io/Portfolio/#"
+                          target="_blank"
+                          >Website</a
+                        >
+                      </td>
+                      <td><span> Email:</span>0818ansh.ag@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <td><span>Degree:</span>CloudComputing</td>
+                      <td><span>Phone:</span>+918397867595</td>
+                    </tr>
+                    <tr>
+                      <td><span>City:</span>Sirsa</td>
+                      <td><span>Freelancer:</span>Available</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="bttn">
+                  <div class="download">
+                    <a href="resume/ANSH's Resume (7).pdf" target="_blank"
+                      >Download CV</a
+                    >
+                  </div>
 
-        <div class="main">
-            <div class="main-content">
-                <div class="information">
-                    <h2>Hello, my name is <span>Ansh Goyal</span></h2>
-                    <h3>I'm a <span>Web Developer</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem perspiciatis at quis cumque
-                        temporibus,
-                        deleniti, omnis aspernatur voluptatum fugit dolores ullam molestiae, quaerat repellendus
-                        deserunt
-                        eius rerum non nostrum harum quidem blanditiis iusto voluptatem assumenda id? Libero ab facilis
-                        ex?
-                    </p>
-                    <button id="About" class="aboutBtn">More About Me</button>
-
+                  <div class="hire">
+                    <a id="hire" href="#contact">Hire Me</a>
+                  </div>
                 </div>
-                <div class="profilePic">
-                    <div class="pic">
-                        <img src="./image/WhatsApp Image 2020-11-12 at 11.57.52 PM.jpeg" alt="Ansh Goyal">
-
+              </div>
+              <div class="skills">
+                <div class="skill-item">
+                  <h3>HTML</h3>
+                  <div class="progress">
+                    <div class="progress-in" style="width: 98%"></div>
+                    <div class="skill-percent">98%</div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <h3>CSS</h3>
+                  <div class="progress">
+                    <div class="progress-in" style="width: 95%"></div>
+                    <div class="skill-percent">95%</div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <h3>JAVASCRIPT</h3>
+                  <div class="progress">
+                    <div class="progress-in" style="width: 90%"></div>
+                    <div class="skill-percent">90%</div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <h3>Node.js</h3>
+                  <div class="progress">
+                    <div class="progress-in" style="width: 50%"></div>
+                    <div class="skill-percent">50%</div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                    <h3>React<h3>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 40%"></div>
+                      <div class="skill-percent">40%</div>
                     </div>
+                  </div>
+                <div class="skill-item">
+                  <h3>C++</h3>
+                  <div class="progress">
+                    <div class="progress-in" style="width: 80%"></div>
+                    <div class="skill-percent">80%</div>
+                  </div>
                 </div>
-
+              </div>
             </div>
 
-            <!-- about  -->
-            <div class="About">
-                <div class="About-content hidden" id="about">
-                    <h1>About Me</h1>
-                    <h2>I'm Ansh Goyal and <span> Web Developer</span></h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi quia veniam culpa! Sit
-                        distinctio id expedita odio excepturi totam, perspiciatis quibusdam deleniti illo eaque dolore?
-                        Aspernatur obcaecati vero ea aperiam? Qui cumque consectetur iusto nam deleniti. Dolorum
-                        sapiente error
-                        ea illo repudiandae perferendis eveniet aspernatur hic consequatur quas minima quasi quidem,
-                        quo,
-                        tenetur voluptatibus dolore voluptas, fuga quibusdam Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Harum et nostrum itaque sint eveniet accusamus quaerat eos debitis, fugiat
-                        amet.</p>
-                    <div class="info">
-                        <div class="personalInfo">
-                            <table class="table">
-
-                                <tbody>
-                                    <tr>
-                                        <td><span>Birthday:</span>11 Nov 2002</td>
-                                        <td><span>Age:</span>19</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>Website:</span>www.domain.com</td>
-                                        <td><span> Email:</span>0818ansh.ag@gmail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>Degree:</span>CloudComputing</td>
-                                        <td><span>Phone:</span>+918397867595</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>City:</span>Sirsa
-                                        <td><span>Freelancer:</span>Available</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <button class="download">Download CV</button>
-                            <!-- <a href="#" class="download">Download CVe</a> -->
-                            <button class="hire">Hire Me</button>
-                            <!-- <a href="#contact" class="hire">Hire Me</a> -->
-
-                        </div>
-                        <div class="skills">
-                            <!-- <h3>HTML</h3>
-                            <h3>CSS</h3>
-                            <h3>JAVASCRIPT</h3>
-                            <h3>JQUERY</h3>
-                            <h3>C++</h3> -->
-                            <div class="skill-item">
-                                <h3>HTML</h3>
-                                <div class="progress">
-                                    <div class="progress-in" style="width: 98%"></div>
-                                    <div class="skill-percent">98%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <h3>CSS</h3>
-                                <div class="progress">
-                                    <div class="progress-in" style="width: 95%"></div>
-                                    <div class="skill-percent">95%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <h3>JAVASCRIPT</h3>
-                                <div class="progress">
-                                    <div class="progress-in" style="width: 90%"></div>
-                                    <div class="skill-percent">90%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <h3>JQUERY</h3>
-                                <div class="progress">
-                                    <div class="progress-in" style="width: 50%"></div>
-                                    <div class="skill-percent">50%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <h3>C++</h3>
-                                <div class="progress">
-                                    <div class="progress-in" style="width: 80%"></div>
-                                    <div class="skill-percent">80%</div>
-                                </div>
-                            </div>
-
-                        </div>
+            <div class="eduExp">
+              <div class="educationContainer">
+                <h2>Education</h2>
+                <div class="education-content">
+                  <div class="education-content-item">
+                    <div class="circle"></div>
+                    <div class="matriculation">
+                      <span><i class="fa fa-calendar"></i> 2017-2018</span>
+                      <h3>Matriculation</h3>
+                      <p>Percentage: <span>82.6%</span></p>
                     </div>
+                  </div>
 
-                    <div class="eduExp">
-                        <div class="educationContainer">
-                            <h2>Education</h2>
-                            <div class="education-content">
-                                <div class="education-content-item">
-                                    <div class="circle"></div>
-                                    <div class="matriculation">
-                                        <span><i class="fa fa-calendar"></i> 2017-2018</span>
-                                        <h3>Matriculation</h3>
-                                        <p>Percentage: <span>86%</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="education-content-item">
-
-                                    <div class="circle"></div>
-                                    <div class="intermediate">
-                                        <span><i class="fa fa-calendar"></i> 2019-2020</span>
-                                        <h3>Intermediate</h3>
-                                        <p>Percentage: <span>84%</span></p>
-
-                                    </div>
-                                </div>
-                                <div class="education-content-item">
-                                    <div class="circle"></div>
-                                    <div class="bachelor">
-                                        <span><i class="fa fa-calendar"></i> 2020-2024</span>
-                                        <h3>Bachelor of Technology</h3>
-                                        <p>CGPA: <span>8.54</span></p>
-
-                                    </div>
-
-                                </div>
-
-
-
-
-                            </div>
-                        </div>
-                        <div class="experinceContainer">
-                            <h2>Experince</h2>
-                            <div class="experince-content">
-                                <div class="experince-content-item">
-                                    <div class="circle"></div>
-                                    <div class="matriculation">
-                                        <span><i class="fa fa-calendar"></i> 2017-2018</span>
-                                        <h3>Matriculation</h3>
-                                        <p>Percentage: <span>86%</span></p>
-
-                                    </div>
-                                </div>
-
-                                <div class="experince-content-item">
-                                    <div class="circle"></div>
-
-                                    <div class="intermediate">
-
-                                        <span><i class="fa fa-calendar"></i> 2019-2020</span>
-                                        <h3>Intermediate</h3>
-                                        <p>Percentage: <span>84%</span></p>
-
-                                    </div>
-                                </div>
-
-                                <div class="experince-content-item">
-                                    <div class="circle"></div>
-
-                                    <div class="bachelor">
-                                        <span><i class="fa fa-calendar"></i> 2020-2024</span>
-                                        <h3>Bachelor of Technology</h3>
-                                        <p>CGPA: <span>8.54</span></p>
-                                    </div>
-
-                                </div>
-
-
-
-
-
-                            </div>
-                        </div>
-
+                  <div class="education-content-item">
+                    <div class="circle"></div>
+                    <div class="intermediate">
+                      <span><i class="fa fa-calendar"></i> 2019-2020</span>
+                      <h3>Intermediate</h3>
+                      <p>Percentage: <span>84%</span></p>
                     </div>
+                  </div>
+                  <div class="education-content-item">
+                    <div class="circle"></div>
+                    <div class="bachelor">
+                      <span><i class="fa fa-calendar"></i> 2020-2024</span>
+                      <h3>Bachelor of Technology</h3>
+                      <p>CGPA: <span>8.41</span></p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="experinceContainer">
+                <h2>Certificates</h2>
+                <div class="experince-content">
+                  <div class="experince-content-item">
+                    <div class="circle"></div>
+                    <div class="matriculation">
+                      <span><i class="fa fa-calendar"></i>06/2022 - 07/2022</span>
+                      <h3>HTML, CSS, and JavaScript for Web Developer</h3>
+                      <p>In this course, I learn the basic tools that every web page coder needs to know. </p>
+                    </div>
+                  </div>
 
+                  <div class="experince-content-item">
+                    <div class="circle"></div>
+
+                    <div class="intermediate">
+                      <span><i class="fa fa-calendar"></i> 06/2022 - 07/2022</span>
+                      <h3>Twowaits Technologies Pvt.Ltd.</h3>
+                      <p>Worked as Client side Web Development Scholar Intern</span></p>
+                    </div>
+                  </div>
+
+                  <div class="experince-content-item">
+                    <div class="circle"></div>
+
+                    <div class="bachelor">
+                      <span><i class="fa fa-calendar"></i>07/2021 - 08/2021</span>
+                      <h3>Technical Support Fundamentals</h3>
+                      <p>In this course, I learn about the different facets of Information Technology</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services">
+          <div class="Services-content hidden" id="Service">
+            <h1>Services</h1>
+
+            <div class="serviceContainer">
+              <div class="serviceContainerContent">
+                <div class="sContent">
+                  <i class="fa fa-palette "></i>
+                  <h3>Front-End Development</h3>
+                  <p>
+                    Focus on the client-side of web development, working with HTML, CSS, and JavaScript to create the user interface and user experience (UI/UX) of a website or application.
+                  </p>
+                </div>
+                <div class="sContent">
+                  <i class="fa fa-laptop-code"></i>
+                  <h3>Website Development</h3>
+                  <p>
+                    Create websites user friendly website by using Html, CSS ,JavaScript and also have basic knowledge of Bootstrap to make website responsive and quick.
+                  </p>
+                </div>
+                <div class="sContent">
+                  <i class="fa fa-mobile-alt"></i>
+                  <h3>Responsive Web Design</h3>
+                  <p>
+                    I Ensure that websites and applications are optimized for different screen sizes and devices. I use responsive design techniques to create a consistent and user-friendly experience across desktops, tablets, and mobile devices.
+                  </p>
+                </div>
+                <div class="sContent">
+                  <i class="fa fa-code"></i>
+                  <h3>Back-End Development</h3>
+                  <p>
+                    As a developer I also handle the server-side programming and database management required to power web applications. Currently i working on the technologies like Node.js, Express.js, and databases such as MySQL or MongoDB.
+                  </p>
+                </div>
+                <div class="sContent">
+                  <i class="fa fa-search"></i>
+                  <h3>Search Engine Optimization (SEO)</h3>
+                  <p>
+                    Optimize websites for search engines to improve visibility and rankings. Implement SEO best practices, such as optimizing page titles, meta tags, URLs, and improving site performance.
+                  </p>
+                </div>
+                <div class="sContent">
+                  <i class="fa fa-bullhorn"></i>
+                  <h3>Website Maintenance and Updates</h3>
+                  <p>
+                    As a developer I try to provide ongoing support to ensure websites and applications are secure, up-to-date, and functioning correctly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio">
+            <div class="Portfolio-content hidden" id="portfolio">
+              <h1>Portfolio</h1>
+  
+              <div class="portfolioContainer">
+                <div class="portfolioContainerContent">
+                  <div class="sContent">
+                    <img src="image/sushil-ghimire-5UbIqV58CW8-unsplash.jpg" alt="">
+                    <div class="layer">
+                        <h3>Gym Management System</h3>
+                        <p>
+                            Create a Responsive GYM Website. The prerequisites of this project are the basic knowledge of HTML CSS and JavaScript. I also use MySQL, PHP and Apache Server for backend.
+                        </p>
+                        <a style="
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background-color: white;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        padding-top: 1rem;
+                        color: #ff004f;
+                        margin-top: 1rem;
+                    "href="https://0818-ansh-ag.github.io/Gym-Management-System/login.html#joining" target="_blank"><i class="fa fa-external-link-alt"></i></a>
+
+                    </div>
+                  </div>
+                  <div class="sContent">
+                    <img src="image/ashni-Wh9ZC4727e4-unsplash.jpg" alt="">
+                    <div class="layer">
+                        <h3>News Website</h3>
+                        <p>
+                            By basic Knowledge of AJAX concept I built News Website. This website will use news API                         </p>
+                        <a style="
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background-color: white;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        padding-top: 1rem;
+                        color: #ff004f;
+                        margin-top: 1rem;
+                    "href="https://0818-ansh-ag.github.io/News-Website/" target="_blank"><i class="fa fa-external-link-alt"></i></a>
+
+                    </div>
+                  </div>
+                  <div class="sContent">
+                    <img src="image/mohammadreza-alidoost-BLQb3i0L6Q4-unsplash.jpg" alt="">
+                    <div class="layer">
+                        <h3>Scientific Calculator</h3>
+                        <p>
+                            The prerequisites of this project are the basic knowledge of HTML CSS and javaScript. calculator is a machine which allows us to do math operations more easily. </p>
+                        <a style="
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background-color: white;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        padding-top: 1rem;
+                        color: #ff004f;
+                        margin-top: 1rem;
+                    "href="https://0818-ansh-ag.github.io/Calculator/" target="_blank"><i class="fa fa-external-link-alt"></i></a>
+
+                    </div>
+                  </div>
+                  <div class="sContent">
+                    <img src="image/lisa-emanuel-1lwqa_hgyeY-unsplash.jpg" alt="">
+                    <div class="layer">
+                        <h3>Alarm Clock</h3>
+                        <p> The prerequisites of this project is Html CSS and JavaScript. The HTML AudioElement Interface can be used to play audio in the browser. Creating an alarm clock which displays time and plays sound at a user specified time.</p>
+                        <a style="
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background-color: white;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        padding-top: 1rem;
+                        color: #ff004f;
+                        margin-top: 1rem;
+                    "href="https://0818-ansh-ag.github.io/Alarm-Clock/" target="_blank"><i class="fa fa-external-link-alt"></i></a>
+
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="contact">
+          <div class="Contact-content hidden" id="Contact">
+            <h1>Contact Me</h1>
+            <div class="contactContainer">
+              <div class="greeting">
+                <div class="greetingContent">
+                  <h2>Have You Any Questions?</h2>
+                  <p>I'M AT YOUR SERVICE</p>
+                </div>
+              </div>
+              <div class="typesToInform">
+                <div class="typesToInformContent">
+                  <div class="call">
+                    <div class="icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <h3>Call Us On</h3>
+                    <p>+91 8397867595</p>
+                  </div>
+                  <div class="location">
+                    <div class="icon">
+                      <i class="fa fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Home</h3>
+                    <p>#225 Aggarsain Colony, Sirsa</p>
+                  </div>
+                  <div class="email">
+                    <div class="icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>0818ansh.ag@gmail.com</p>
+                  </div>
+                  <div class="website">
+                    <div class="icon">
+                      <i class="fa fa-globe"></i>
+                    </div>
+                    <h3>Website</h3>
+                    <p>Ansh-designer-0818.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                  <div class="formInnerBox">
+                    <div class="message">
+                      <h3>SEND ME AN EMAIL</h3>
+                      <p>I'M VERY RESPONSIVE TO MESSAGES</p>
+                    </div>
+                    <div class="formContent">
+                      <input type="text" id="Name" placeholder="Name" />
+                      <input type="text" id="Email" placeholder="Email" />
+                      <input type="text" id="Subject" placeholder="Subject" />
+                      <textarea
+                        name="Message"
+                        id="Message"
+                        placeholder="Message"
+                      ></textarea>
+                      <button id="send">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
 
-            <div class="services">
-                <div class="Services-content hidden" id="Service">
-                    <h1>Services</h1>
-
-                    <div class="serviceContainer">
-                        <div class="serviceContainerContent">
-                            <div class="sContent">
-                                <i class="fa fa-mobile-alt"></i>
-                                <h3>Web Desktop</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt vel eius fugit
-                                    labore voluptas suscipit, velit quisquam laborum, consequatur vero totam repellat
-                                    perspiciatis rerum molestiae. Voluptatibus quas voluptatum ipsam.</p>
-                            </div>
-                            <div class="sContent">
-                                <i class="fa fa-laptop-code"></i>
-                                <h3>Web Desktop</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt vel eius fugit
-                                    labore voluptas suscipit, velit quisquam laborum, consequatur vero totam repellat
-                                    perspiciatis rerum molestiae. Voluptatibus quas voluptatum ipsam.</p>
-                            </div>
-                            <div class="sContent">
-                                <i class="fa fa-palette"></i>
-                                <h3>Web Desktop</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt vel eius fugit
-                                    labore voluptas suscipit, velit quisquam laborum, consequatur vero totam repellat
-                                    perspiciatis rerum molestiae. Voluptatibus quas voluptatum ipsam.</p>
-                            </div>
-                            <div class="sContent">
-                                <i class="fa fa-code"></i>
-                                <h3>Web Desktop</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt vel eius fugit
-                                    labore voluptas suscipit, velit quisquam laborum, consequatur vero totam repellat
-                                    perspiciatis rerum molestiae. Voluptatibus quas voluptatum ipsam.</p>
-                            </div>
-                            <div class="sContent">
-                                <i class="fa fa-search"></i>
-                                <h3>Web Desktop</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt vel eius fugit
-                                    labore voluptas suscipit, velit quisquam laborum, consequatur vero totam repellat
-                                    perspiciatis rerum molestiae. Voluptatibus quas voluptatum ipsam.</p>
-                            </div>
-                            <div class="sContent">
-                                <i class="fa fa-bullhorn"></i>
-                                <h3>Web Desktop</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt vel eius fugit
-                                    labore voluptas suscipit, velit quisquam laborum, consequatur vero totam repellat
-                                    perspiciatis rerum molestiae. Voluptatibus quas voluptatum ipsam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact">
-                <div class="Contact-content hidden" id="Contact">
-                    <h1>Contact Me</h1>
-                    <div class="contactContainer">
-                        <div class="greeting">
-                            <div class="greetingContent">
-                                <h2>Have You Any Questions?</h2>
-                                <p>I'M AT YOUR SERVICE</p>
-                            </div>
-                        </div>
-                        <div class="typesToInform">
-                            <div class="typesToInformContent">
-                                <div class="call">
-                                    <div class="icon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <h3>Call Us On</h3>
-                                    <p>+91 8397867595</p>
-
-                                </div>
-                                <div class="location">
-                                    <div class="icon">
-                                        <i class="fa fa-map-marker-alt" ></i>
-                                    </div>
-                                    <h3>Home</h3>
-                                    <p>#225 Aggarsain Colony, Sirsa</p>
-                                </div>
-                                <div class="email">
-                                    <div class="icon">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <h3>Email</h3>
-                                    <p>0818ansh.ag@gmail.com</p>
-                                </div>
-                                <div class="website">
-                                    <div class="icon">
-                                        <i class="fa fa-globe"></i>
-                                    </div>
-                                    <h3>Website</h3>
-                                    <p>Ansh-designer-0818.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form">
-                            <div class="formInnerBox">
-                                <div class="message">
-                                    <h3>SEND ME AN EMAIL</h3>
-                                    <p>I'M VERY RESPONSIVE TO MESSAGES</p>
-                                </div>
-                                <div class="formContent">
-                                    <input type="text" id="Name" placeholder="Name">
-                                    <input type="text" id="Email" placeholder="Email">
-                                    <input type="text" id="Subject" placeholder="Subject">
-                                    <textarea name="Message" id="Message" placeholder="Message" ></textarea>
-                                    <button id="Send">Send Message</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="ContactContainer">
+            <!-- <div class="ContactContainer">
                     </div> -->
-                </div>
-            </div>
-
-            
+          </div>
         </div>
-
+      </div>
     </div>
-
-
-</body>
-<script src="Portfolio.js"></script>
-
+  </body>
+  <script src="Portfolio.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </html>
